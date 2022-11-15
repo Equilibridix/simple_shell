@@ -7,6 +7,7 @@
  * @envp: environmental variable linked list
  * Return: a pointer to the his linked list
  */
+
 void create_history(hist_t *his, env_t *envp)
 {
 	char *str, *buf;
@@ -42,6 +43,7 @@ void create_history(hist_t *his, env_t *envp)
  * print_history - prints the his
  * @head: the head of the linked list
  */
+
 void print_history(hist_t *head)
 {
 	char *str;
@@ -62,6 +64,7 @@ void print_history(hist_t *head)
  * Description: this function will add node to the end of the list
  * Return: a pointer to the new node
  */
+
 hist_t *add_history(hist_t *head, char *command)
 {
 	hist_t *newnode;
@@ -88,6 +91,7 @@ hist_t *add_history(hist_t *head, char *command)
  * @buf: buffer to input what is read
  * Return: 1 if success and 0 if failed
  */
+
 int read_file(env_t *envp, char **buf)
 {
 	static int b_size = BUFSIZE;
@@ -132,6 +136,7 @@ int read_file(env_t *envp, char **buf)
  * @envp: environemental linked list
  * Return: the path str
  */
+
 char *make_path(char **path, char *filename, char *key, env_t *envp)
 {
 	char *val;
