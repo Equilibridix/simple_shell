@@ -7,6 +7,7 @@
  * @needle: string to find
  * Return: index to the beginning of the located substring
  */
+
 int _strstr_int(char *haystack, char *needle)
 {
 	int i;
@@ -37,6 +38,7 @@ int _strstr_int(char *haystack, char *needle)
  * @needles: Chars to search for in s
  * Return: index of first char in s, else -1
  */
+
 int _strpbrk_int(char *s, char *needles)
 {
 	int i, c;
@@ -56,6 +58,7 @@ int _strpbrk_int(char *s, char *needles)
  *
  * Return: 1 if match, 0 if not match
  */
+
 int _str_match_strict(char *s1, char *s2)
 {
 	int i;
@@ -75,6 +78,7 @@ int _str_match_strict(char *s1, char *s2)
  * @c: character to check
  * Return: 1 if true, 0 if false
  */
+
 int is_alpha(char c)
 {
 	if (c >= 'a' && c <= 'z')
@@ -90,6 +94,7 @@ int is_alpha(char c)
  * @c: character to check
  * Return: 1 if true, 0 if false
  */
+
 int is_digit(char c)
 {
 	if (c >= '0' && c <= '9')
