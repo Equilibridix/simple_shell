@@ -6,6 +6,7 @@
  * @str: string to copy
  * Return: pointer to copy of string
  */
+
 char *_strdup(char *str)
 {
 	char *copy_str;
@@ -33,6 +34,7 @@ char *_strdup(char *str)
  * @s: string to search character
  * Return: pointer to first occurence of character c or null if not found
  */
+
 char *_strchr(char *s, char c)
 {
 	while (*s != '\0')
@@ -52,6 +54,7 @@ char *_strchr(char *s, char c)
  * @s: character of string
  * Return: length of string
  */
+
 int _strlen(char *s)
 {
 	int i;
@@ -69,6 +72,7 @@ int _strlen(char *s)
  *
  * Return: 1 if match, 0 if not match
  */
+
 int _str_match_tonull(char *s1, char *s2)
 {
 	int i;
@@ -91,6 +95,7 @@ int _str_match_tonull(char *s1, char *s2)
  *
  * Return: number representation of string
  */
+
 int _atoi(char *s)
 {
 	int num;
