@@ -1,12 +1,13 @@
 #include "shell.h"
 
 /**
- * _getline - Read input and put in buffer
- * @b: buffer structure
- * @fd: file descriptor to read from
- * @envp: enviornment structure
- * Return: Always 0. Exit on failure or EOF
+ * _getline - Read input and put in buffer.
+ * @b: buffer structure.
+ * @fd: file descriptor to read from.
+ * @envp: enviornment structure.
+ * Return: Always 0. Exit on failure or EOF.
  */
+
 int _getline(buffer *b, int fd, env_t *envp)
 {
 	int offset, num;
