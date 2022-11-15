@@ -7,6 +7,7 @@
  * Return: 0 if successly found PATH variable and 1 if PATH
  * not found
  */
+
 int get_path(char *path, env_t *list)
 {
 	env_t *temp;
