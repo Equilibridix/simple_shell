@@ -8,6 +8,7 @@
  *
  * Return: 1 if match, 0 if not match
  */
+
 int _str_match(char *s1, char *s2)
 {
 	int i;
@@ -38,6 +39,7 @@ int _str_match(char *s1, char *s2)
  *				stop the matching and return true with.
  * Return: 1 if match, 0 if no match.
  */
+
 int string_match(char *s1, char *s2, char *delim)
 {
 	int i;
@@ -64,6 +66,7 @@ int string_match(char *s1, char *s2, char *delim)
  *				if 'c' is \0. By design.
  * Return: 1 if match, 0 if no match.
  */
+
 int char_match(char c, char *needles)
 {
 	if (needles == NULL)
