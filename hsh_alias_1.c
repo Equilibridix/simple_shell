@@ -5,11 +5,13 @@
  * @argv: argument vector
  * @env_p: env list
  * @mode: Execution mode for the program, 0 or !0
- * Description: Complicated parent function for the alias functionality
- *				of hsh. Uses two modes to allow it being called from
- *				multiple points from within our program.
+ * Description: Complicated parent function for 
+ * the alias functionality of hsh. 
+ * Uses two modes to allow it being called from
+ * multiple points from within our program.
  * Return: 0 on success, 2 on failure.
  */
+
 int hsh_alias(char **argv, env_t *env_p, int mode)
 {
 	static alias list = {NULL, NULL, NULL};
@@ -47,6 +49,7 @@ int hsh_alias(char **argv, env_t *env_p, int mode)
  *
  * Return: matching alias value, or NULL
  */
+
 char *hsh_alias_search(alias *list, char *arg)
 {
 	while (list != NULL && list->key != NULL)
