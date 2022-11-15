@@ -1,13 +1,14 @@
 #include "shell.h"
 
 /**
- * history_wrapper - determines what to do for history
- * @command: command for add history mode
- * @envp: environemental variable linked list
- * @mode: mode to determine what to do
+ * history_wrapper - determines what to do for history.
+ * @command: command for add history mode.
+ * @envp: environemental variable linked list.
+ * @mode: mode to determine what to do.
  * Description: 'c' create mode to create list,
  * 'a' add history mode, and 'w' write to file mode
  */
+
 void history_wrapper(char *command, env_t *envp, char mode)
 {
 	char **arg;
