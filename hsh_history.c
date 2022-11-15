@@ -3,10 +3,11 @@
 /**
  * hsh_history - builtin command hsh_history, mimics builtin history
  * @arg_list: argrument list of input
- * @envp: environemental variable list
+ * @envp: environmental variable list
  * @mode: mode to direct which function to execute
  * Return: Always 0
  */
+
 int hsh_history(char **arg_list, env_t *envp, int mode)
 {
 	static hist_t his = {NULL, NULL};
@@ -33,6 +34,7 @@ int hsh_history(char **arg_list, env_t *envp, int mode)
  * print_history_2 - prints out the his with index
  * @his: his linked list
  */
+
 void print_history_2(hist_t *his)
 {
 	int i, count;
