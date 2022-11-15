@@ -4,9 +4,11 @@
  * tokenize_buf - tokenize buffer by inputting NULLs and filling **av
  * @b: The buffer with the command string
  * @argv: Pointer to the command argument vector
- * Description: This function accepts a string such as 'ls -l' and changes
- *              it to 'ls\0-l'. It puts pointers to 'ls' and '-l' into *av
+ * Description: This function accepts a string such as 'ls -l' 
+ * and changes it to 'ls\0-l'. 
+ * It puts pointers to 'ls' and '-l' into *av.
  */
+
 void tokenize_buf(buffer *b, char ***argv)
 {
 	int i, ap, flag, whitespace;
