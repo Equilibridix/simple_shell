@@ -4,6 +4,7 @@
  * buff_reallocate - resize and copy over into new buffer space
  * @b: pointer to buffer structure
  */
+
 void buff_reallocate(buffer *b)
 {
 	char *tmpbuf;
@@ -20,8 +21,9 @@ void buff_reallocate(buffer *b)
  * @b: pointer to buffer structure
  * @n: position to overwrite from
  * Description: If b->buf[n] is not pointing at a legal command character,
- *				function will do nothing. Otherwise overwrites word.
+ * function will do nothing. Otherwise overwrites word.
  */
+
 void buff_word_erase(buffer *b, int n)
 {
 	int i;
