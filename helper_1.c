@@ -1,8 +1,9 @@
 #include "shell.h"
 
 /**
- * print_cmdline - prints the command line or PS1
+ * print_cmdline - prints the command line or PS1.
  */
+
 void print_cmdline(void)
 {
 	char *str;
@@ -17,6 +18,7 @@ void print_cmdline(void)
  *
  * Return: pointer to new space
  */
+
 void *safe_malloc(size_t size)
 {
 	void *temp;
@@ -36,6 +38,7 @@ void *safe_malloc(size_t size)
  * _write_err - Write to standard error
  * @s: string to write to stderr
  */
+
 void _write_err(char *s)
 {
 	write(STDERR_FILENO, s, _strlen(s));
@@ -48,6 +51,7 @@ void _write_err(char *s)
  * @bufsize: the size of the path
  * Return: a string containing the path
  */
+
 char *rm_vname(env_t *envp, char *name, int bufsize)
 {
 	char *pwd;
@@ -81,6 +85,7 @@ char *rm_vname(env_t *envp, char *name, int bufsize)
  * @name: key/name of the env variable
  * Return: a pointer to the value, NULL if none found
  */
+
 char *get_env_value(env_t *envp, char *name)
 {
 	char *val;
