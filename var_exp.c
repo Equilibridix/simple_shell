@@ -1,15 +1,16 @@
 #include "shell.h"
 
 /**
- * variable_expansion - Expand variables in the buffer
- * @b: buffer structure
- * @envp: Enviorn structure
+ * variable_expansion - Expand variables in the buffer.
+ * @b: buffer structure.
+ * @envp: Enviorn structure.
  * @return_val: return value of previous command
  * Description: Expands variables from input of $VALUE.
  *				$? = Last return value.
  *				$$ = Process ID.
  *				$VALUE = Any enviormental variable. Deletes if found none.
  */
+
 void variable_expansion(buffer *b, env_t *envp, int return_val)
 {
 	char *hold;
