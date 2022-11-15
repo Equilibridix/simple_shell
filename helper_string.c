@@ -3,11 +3,12 @@
 /**
  * _memcpy - copies num bytes form the memory area src
  * to memory area dest
- * @src: source code to copy
- * @dest: destination to copy to
- * @num: how many bytes to copy
+ * @src: source code to copy.
+ * @dest: destination to copy to.
+ * @num: how many bytes to copy.
  * Return: dest;
  */
+
 char *_memcpy(char *dest, char *src, unsigned int num)
 {
 	unsigned int i;
@@ -26,6 +27,7 @@ char *_memcpy(char *dest, char *src, unsigned int num)
  * @num: first num bytes
  * Return: s
  */
+
 char *_memset(char *s, char b, unsigned int num)
 {
 	unsigned int i;
@@ -43,6 +45,7 @@ char *_memset(char *s, char b, unsigned int num)
  * @src: what to append
  * Return: pointer to dest
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int i, j;
@@ -70,6 +73,7 @@ char *_strcat(char *dest, char *src)
  * @num: how many bytes to
  * Return: dest
  */
+
 char *_strncat(char *dest, char *src, int num)
 {
 	int i, j;
@@ -95,6 +99,7 @@ char *_strncat(char *dest, char *src, int num)
  * @needle: string to find
  * Return: pointer to the beginning of the located substring
  */
+
 char *_strstr(char *haystack, char *needle)
 {
 
