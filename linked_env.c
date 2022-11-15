@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * create_envlist - creates a linked list with all environment
- * variables in the extern environ variable
- * Return: head of created list
+ * create_envlist - creates a linked list with all environment.
+ * variables in the extern environ variable.
+ * Return: head of created list.
  */
 
 env_t *create_envlist(void)
@@ -24,6 +24,7 @@ env_t *create_envlist(void)
  * @str: environmental variable val to store
  * Return: the address of the new element, on fail, program exits
  */
+
 env_t *add_env(env_t **head, char *str)
 {
 	env_t *newnode;
