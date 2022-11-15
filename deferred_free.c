@@ -4,6 +4,7 @@
  * _free - frees memory and removes address from defer'd free list
  * @address: address to free
  */
+
 void _free(void *address)
 {
 	defer_free(address);
@@ -15,6 +16,7 @@ void _free(void *address)
  *removes from list if exists
  * @address: address to set
  */
+
 void defer_free(void *address)
 {
 	static addr_list list = {NULL, NULL};
@@ -51,9 +53,9 @@ void defer_free(void *address)
  * clear_addr_list_node - clear an address from the list
  * @list: addr_list list
  * @address: address to search and clear
- *
  * Return: 0 if address is found and cleared, 1 if no match is found
  */
+
 int clear_addr_list_node(addr_list *list, void *address)
 {
 	while (list != NULL)
@@ -73,6 +75,7 @@ int clear_addr_list_node(addr_list *list, void *address)
  * @list: addr_list list
  * @address: address to add to node
  */
+
 void add_addr_list_node(addr_list *list, void *address)
 {
 	addr_list *node;
@@ -93,6 +96,7 @@ void add_addr_list_node(addr_list *list, void *address)
  * free_addr_list - free the addr_list and all addresses stored
  * @list: the addr_list to free
  */
+
 void free_addr_list(addr_list *list)
 {
 	addr_list *temp;
