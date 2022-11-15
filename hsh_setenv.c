@@ -1,13 +1,14 @@
 #include "shell.h"
 
 /**
- * hsh_setenv - builtin command hsh_setenv, mimics builtin setenv
+ * hsh_setenv - builtin command hsh_setenv, mimics builtin setenv.
  * @arg_list: list of arguements that contain the env name, value and
- * overwrite value
- * @envp: a pointer to the linked list of environmental variables
- * @bufsize: buf size to set malloc space
- * Return: 0 on success and 1 on error
+ * overwrite value.
+ * @envp: a pointer to the linked list of environmental variables.
+ * @bufsize: buf size to set malloc space.
+ * Return: 0 on success and 1 on error.
  */
+
 int hsh_setenv(char **arg_list, env_t *envp, int bufsize)
 {
 	int flag, len, len2;
@@ -47,6 +48,7 @@ int hsh_setenv(char **arg_list, env_t *envp, int bufsize)
  * hsh_setenv_help - builtin help printout for setenv
  * Return: Always 0
  */
+
 int hsh_setenv_help(void)
 {
 	_write("setenv usage: setenv VARIABLE VALUE\n    Initialize a new");
