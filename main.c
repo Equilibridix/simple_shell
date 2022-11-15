@@ -1,12 +1,13 @@
 #include "shell.h"
 
 /**
- * main - Entry point
- * @argc: argument count
- * @argv: a list of all arguments
- * @envp: environmental variable list from the parent
+ * main - Entry point.
+ * @argc: argument count.
+ * @argv: a list of all arguments.
+ * @envp: environmental variable list from the parent.
  * Return: 0 on success.
  */
+
 int main(int argc, char **argv, char **envp)
 {
 	char **arg_list;
