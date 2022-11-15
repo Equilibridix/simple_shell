@@ -8,7 +8,6 @@
  * list, keeps count on how many entries there are in the list,
  * if the list execeeds, 4096, then the head will pop off.
  */
-
 void add_cmdhist(hist_t *his, char *command)
 {
 	static int his_index = 1;
