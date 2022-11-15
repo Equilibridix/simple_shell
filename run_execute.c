@@ -6,10 +6,12 @@
  * @env_p: the linked list containing environmental variables
  * @cmd_size: size that command should be allocated for
  * Description: Checks if the command given is given the path (i.e /bin/ls)
- * if not, then the function will find the path for the command and if it fails
- * to find the command, an Error: command not found will be printed.
+ * if not, then the function will find the path for the command 
+ * and if it fails to find the command, 
+ * an Error: command not found will be printed.
  * Return: status if success or 127 if failure.
  */
+
 int run_execute(char **arg_list, env_t *env_p, int cmd_size)
 {
 	char *command, *path;
