@@ -1,13 +1,14 @@
 #include "shell.h"
 
 /**
- * add_cmdhist - add new command to the history linked list
- * @his: history linked list
- * @command: command to put into the history
+ * add_cmdhist - add new command to the history linked list.
+ * @his: history linked list.
+ * @command: command to put into the history.
  * Description: Adds the new command to the end of the linked
  * list, keeps count on how many entries there are in the list,
- * if the list execeeds, 4096, then the head will pop off
+ * if the list execeeds, 4096, then the head will pop off.
  */
+
 void add_cmdhist(hist_t *his, char *command)
 {
 	static int his_index = 1;
@@ -37,6 +38,7 @@ void add_cmdhist(hist_t *his, char *command)
  * @his: his link list to find what to write in
  * Return: 0 if success and 1 if failed to find path for file
  */
+
 int  write_history(env_t *envp, hist_t *his)
 {
 	hist_t *temp, *temp_c;
