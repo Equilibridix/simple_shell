@@ -2,11 +2,12 @@
 
 /**
  * run_builtin - checking arg_list for builtins and executing found cmd.
- * @arg_list: argument list
- * @env_p: enviorn list
- * @bufsize: buffer size
- * Return: 0 on found builtin, 1 on found nothing, 2 on builtin error
+ * @arg_list: argument list.
+ * @env_p: enviorn list.
+ * @bufsize: buffer size.
+ * Return: 0 on found builtin, 1 on found nothing, 2 on builtin error.
  */
+
 int run_builtin(char **arg_list, env_t *env_p, int bufsize)
 {
 	int i, size, stat;
