@@ -4,6 +4,7 @@
  * _write - Write information to STDOUT
  * @s: string;
  */
+
 void _write(char *s)
 {
 	write(STDOUT_FILENO, s, _strlen(s));
@@ -17,6 +18,7 @@ void _write(char *s)
  * @bufsize: the size of the current path
  * Return: a path without any symbols such as (., .., ~, or -)
  */
+
 char *update_path(char **arg_list, env_t *envp, char *path, int bufsize)
 {
 	int i, slashcount, flag;
@@ -56,6 +58,7 @@ char *update_path(char **arg_list, env_t *envp, char *path, int bufsize)
  * @envp: environemental list to convert
  * Return: a 2D array containing strings contained in linked list
  */
+
 char **list_to_array(env_t *envp)
 {
 	char **array;
@@ -82,6 +85,7 @@ char **list_to_array(env_t *envp)
  * @s2: string two to compare
  * Return: an integer less than 0 if s1 is found
  */
+
 int _strcmp(char *s1, char *s2)
 {
 	int i;
@@ -104,6 +108,7 @@ int _strcmp(char *s1, char *s2)
  * @src: string that i want to copy
  * Return: the point to dest
  */
+
 char *_strcpy(char *dest, char *src)
 {
 	int i;
